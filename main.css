@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    background-color: #ffe6f2;
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #4a4a4a;
+}
+
+/* Header Styles */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: url('media\header.png ') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+
+#digital-clock {
+  font-size: 50px;
+  font-family: 'Arial', sans-serif;
+  color: #ff1493;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+body h2 {
+    color: IndianRed !important;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #ff1493;
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #ffc0cb;
+    color: black;
+}
+
+/* Layout Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #ffe4e1;
+    padding: 20px;
+}
+
+
+.main {
+    flex: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Image Styling */
+.image-wrapper {
+    height: auto;
+    position: relative;
+    border: 5px solid #ff69b4;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: #ffc0cb;
+  background-image: url('media/landscape.gif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  height: auto; /* Adjust based on content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows content to wrap properly */
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Gallery Page Specific Styles */
+nav {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 300ms;
+}
+
+nav a:hover {
+    background-color: #444444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image-box {
+    text-align: center;
+    margin: 10px;
+}
+
+.image-box img {
+    width: 335px;
+    height: 300px;
+    border: 2px solid #000000;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px #000000;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.image-box img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+
+.image-box p {
+    margin-top: 10px;
+    color: #ffe4e1;
+    font-size: 16px;
+}
+
+#chatbox {
+  border: 2px solid #ff1493;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffe4e1;
+  max-width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff1493;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 10px; /* Ensures spacing between input and button */
+}
+
+button {
+  background-color: #ff1493;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffc0cb;
+  color: black;
+}
+
+  #chatbox {
+    max-height: 200px;
+  }
+}
+
+
